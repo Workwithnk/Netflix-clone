@@ -1,0 +1,35 @@
+* {
+  color: white;
+}
+.main_container {
+  margin-left: 20px;
+}
+.data_row {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 20px;
+}
+.data_row::-webkit-scrollbar {
+  display: none;
+}
+
+.poster_row_image {
+  object-fit: contain;
+  width: 100%;
+  max-width: 200px;
+  margin: 0px 10px;
+  transition: transform 450ms;
+}
+
+.poster_row_image:hover {
+  transform: scale(1.08);
+  cursor: pointer;
+}
+.poster_row_image_large {
+  max-width: 250px;
+}
+.poster_row_image_large::hover {
+  transform: scale(1.09);
+  cursor: pointer;
+}
